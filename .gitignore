@@ -1,0 +1,6 @@
+syntax: glob
+
+*.zst
+pkg/*
+src/*
+jdk-*.tar.gz

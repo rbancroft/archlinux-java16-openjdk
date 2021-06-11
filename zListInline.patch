@@ -1,0 +1,12 @@
+Only in package.new: build
+diff --unified --recursive --text jdk16u-jdk-16.0.1-9/src/hotspot/share/gc/z/zMemory.hpp package.new/src/hotspot/share/gc/z/zMemory.hpp
+--- jdk16u-jdk-16.0.1-9/src/hotspot/share/gc/z/zMemory.hpp	2021-03-26 08:45:50.000000000 -0600
++++ package.new/src/hotspot/share/gc/z/zMemory.hpp	2021-06-11 14:07:20.938584104 -0600
+@@ -27,6 +27,7 @@
+ #include "gc/z/zList.hpp"
+ #include "gc/z/zLock.hpp"
+ #include "memory/allocation.hpp"
++#include "gc/z/zList.inline.hpp"
+ 
+ class ZMemory : public CHeapObj<mtGC> {
+   friend class ZList<ZMemory>;
